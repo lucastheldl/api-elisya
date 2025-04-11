@@ -13,13 +13,18 @@ const receiptController = new Elysia({
 
       if (!cpf) {
         set.status = 400;
-        return { status: "error" };
+        return { status: "error", message: "Bad request" };
       }
 
-      await createNewReceipt(body);
+      const note = await createNewReceipt(body);
+
+      if (!note) {
+        set.status = 500;
+        return { status: "error", message: "Internal server error" };
+      }
 
       set.status = 201;
-      return { status: "success" };
+      return { status: "success", message: "Receipt created" };
     },
     {
       body: t.Omit(receiptType, ["id", "createdAt"]),

@@ -7,6 +7,6 @@ export async function createNewReceipt(
   try {
     return await ReceiptRepository.create(body);
   } catch (error) {
-    console.log("Erro ao criar nota fiscal");
+    console.log("Erro ao criar nota fiscal", error);
   }
 }
