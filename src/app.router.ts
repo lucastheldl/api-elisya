@@ -1,5 +1,5 @@
 import Elysia from "elysia";
-import { receiptController } from "./receipt/infrastructure/receipt-controller";
+import { receiptController } from "./controllers/receipt-controller";
 
 const routes = new Elysia().use(receiptController);
 
