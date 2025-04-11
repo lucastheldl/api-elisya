@@ -1,5 +1,6 @@
 import Elysia, { t } from "elysia";
 import { receiptType } from "../types/receipt";
+import { createNewReceipt } from "../use-state/create-receipt.use-case";
 
 const receiptController = new Elysia({
   prefix: "receipt",
@@ -14,6 +15,8 @@ const receiptController = new Elysia({
         set.status = 400;
         return { status: "error" };
       }
+
+      await createNewReceipt(body);
 
       set.status = 201;
       return { status: "success" };
