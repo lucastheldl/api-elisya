@@ -1,4 +1,4 @@
-[ ] rota de gerar nota fiscal para um cpf
+[x] rota de gerar nota fiscal para um cpf
 
 [ ] buscar todas as notas de um cpf
 
