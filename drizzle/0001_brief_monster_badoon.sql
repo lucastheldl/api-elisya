@@ -1,1 +1,0 @@
-ALTER TABLE "receipts" ALTER COLUMN "cpf" SET DATA TYPE varchar(15);

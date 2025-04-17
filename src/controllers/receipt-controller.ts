@@ -1,6 +1,6 @@
 import Elysia, { t } from "elysia";
 import { receiptType } from "../types/receipt";
-import { createNewReceipt } from "../use-state/create-receipt.use-case";
+import { createNewReceipt } from "../use-case/create-receipt.use-case";
 
 const receiptController = new Elysia({
   prefix: "receipt",

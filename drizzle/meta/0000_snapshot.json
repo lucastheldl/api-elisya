@@ -1,5 +1,5 @@
 {
-  "id": "6d253c3e-43f1-44b2-9f0b-9ed3b688b87a",
+  "id": "9740ea37-e3ec-4c80-8a70-087388712231",
   "prevId": "00000000-0000-0000-0000-000000000000",
   "version": "7",
   "dialect": "postgresql",
@@ -27,35 +27,28 @@
         },
         "amount": {
           "name": "amount",
-          "type": "numeric",
+          "type": "varchar(255)",
           "primaryKey": false,
           "notNull": true
         },
         "cpf": {
           "name": "cpf",
-          "type": "integer",
+          "type": "varchar(15)",
           "primaryKey": false,
           "notNull": true
         },
-        "createdAt": {
-          "name": "createdAt",
-          "type": "date",
+        "created_at": {
+          "name": "created_at",
+          "type": "timestamp with time zone",
           "primaryKey": false,
-          "notNull": true
+          "notNull": true,
+          "default": "CURRENT_TIMESTAMP"
         }
       },
       "indexes": {},
       "foreignKeys": {},
       "compositePrimaryKeys": {},
-      "uniqueConstraints": {
-        "receipts_createdAt_unique": {
-          "name": "receipts_createdAt_unique",
-          "nullsNotDistinct": false,
-          "columns": [
-            "createdAt"
-          ]
-        }
-      },
+      "uniqueConstraints": {},
       "policies": {},
       "checkConstraints": {},
       "isRLSEnabled": false

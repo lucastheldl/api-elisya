@@ -5,22 +5,8 @@
     {
       "idx": 0,
       "version": "7",
-      "when": 1744396764502,
-      "tag": "0000_nifty_energizer",
-      "breakpoints": true
-    },
-    {
-      "idx": 1,
-      "version": "7",
-      "when": 1744398136154,
-      "tag": "0001_brief_monster_badoon",
-      "breakpoints": true
-    },
-    {
-      "idx": 2,
-      "version": "7",
-      "when": 1744401133516,
-      "tag": "0002_rainy_supernaut",
+      "when": 1744897289548,
+      "tag": "0000_freezing_starhawk",
       "breakpoints": true
     }
   ]
